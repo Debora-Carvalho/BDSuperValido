@@ -1,0 +1,84 @@
+--  informações sobre os supermercados com seus respectivos endereços
+CREATE VIEW vw_supermercados_enderecos AS
+SELECT 
+    s.SUP_INT_ID,
+    s.SUP_STR_NOMEFANTASIA,
+    s.SUP_STR_RAZAOSOCIAL,
+    s.SUP_STR_CNPJ,
+    s.SUP_STR_NOMEREPRESENTANTE,
+    s.SUP_STR_TELEFONE,
+    s.SUP_STR_EMAIL,
+    s.SUP_STR_SITE,
+    e.END_STR_LOGRADOURO,
+    e.END_STR_NUMERO,
+    e.END_STR_BAIRRO,
+    e.END_STR_CEP,
+    c.CID_STR_DESCRICAO AS CIDADE,
+    es.EST_STR_DESCRICAO AS ESTADO,
+    es.EST_STR_SIGLA
+FROM SUPERMERCADO s
+JOIN ENDERECO e ON s.END_INT_ID = e.END_INT_ID
+JOIN CIDADE c ON e.CID_INT_ID = c.CID_INT_ID
+JOIN ESTADO es ON c.EST_INT_ID = es.EST_INT_ID;
+
+-- dados dos produtos com informações de suas categorias, marcas, supermercados e ofertas exclusivas
+CREATE VIEW vw_produtos_completos AS
+SELECT
+    p.PRO_INT_ID,
+    p.PRO_STR_DESCRICAO,
+    p.PRO_DAT_DATAVENCIMENTO,
+    p.PRO_DOU_PRECO,
+    p.PRO_INT_QUANTIDADE,
+    c.CAT_STR_DESCRICAO AS CATEGORIA,
+    m.MAR_STR_DESCRICAO AS MARCA,
+    s.SUP_STR_NOMEFANTASIA AS SUPERMERCADO,
+    o.OFE_STR_DESCRICAO AS OFERTA,
+    o.OFE_INT_PONTUACAODESCONTO,
+    o.OFE_DAT_DATAINICIO,
+    o.OFE_DAT_DATAEXPIRACAO
+FROM PRODUTO p
+JOIN CATEGORIA c ON p.CAT_INT_ID = c.CAT_INT_ID
+JOIN MARCA m ON p.MAR_INT_ID = m.MAR_INT_ID
+JOIN SUPERMERCADO s ON p.SUP_INT_ID = s.SUP_INT_ID
+JOIN OFERTAEXCLUSIVA o ON p.OFE_INT_ID = o.OFE_INT_ID;
+
+-- informações dos usuários com suas respectivas pontuações
+CREATE VIEW vw_usuarios_pontuacoes AS
+SELECT
+    u.USU_INT_ID,
+    u.USU_STR_DESCRICAO,
+    u.USU_STR_TELEFONE,
+    u.USU_STR_EMAIL,
+    p.PON_INT_PONTO
+FROM USUARIO u
+LEFT JOIN PONTUACAOUSUARIO p ON u.USU_INT_ID = p.USU_INT_ID;
+
+-- informações sobre as notificações de promoções enviadas para os usuários
+CREATE VIEW vw_notificacoes_promocoes AS
+SELECT
+    un.USN_INT_ID,
+    un.USU_INT_ID,
+    u.USU_STR_DESCRICAO AS USUARIO,
+    un.NOT_INT_ID,
+    un.PRO_INT_ID,
+    n.NOT_STR_DESCRICAO AS NOTIFICACAO,
+    p.PRO_STR_DESCRICAO AS PROMOCAO
+FROM USUARIONOTIFICACAO un
+JOIN USUARIO u ON un.USU_INT_ID = u.USU_INT_ID
+JOIN NOTIFICACAO n ON un.NOT_INT_ID = n.NOT_INT_ID AND un.PRO_INT_ID = n.PRO_INT_ID
+JOIN PROMOCAO p ON n.PRO_INT_ID = p.PRO_INT_ID;
+
+-- avaliações de usuários sobre suas experiências (de compra) nos supermercados
+CREATE VIEW vw_avaliacoes_experiencias AS
+SELECT
+    ae.AVA_INT_ID,
+    ae.USU_INT_ID,
+    u.USU_STR_DESCRICAO AS USUARIO,
+    ae.SUP_INT_ID,
+    s.SUP_STR_NOMEFANTASIA AS SUPERMERCADO,
+    ae.AVA_STR_DESCRICAO AS AVALIACAO
+FROM AVALIACAOEXPERIENCIA ae
+JOIN USUARIO u ON ae.USU_INT_ID = u.USU_INT_ID
+JOIN SUPERMERCADO s ON ae.SUP_INT_ID = s.SUP_INT_ID;
+
+
