@@ -38,14 +38,6 @@ INSERT INTO CATEGORIA (CAT_STR_DESCRICAO) VALUES
 ('Higiene Pessoal'),
 ('Papelaria');
 
--- Insert into NOTIFICACAO
-INSERT INTO NOTIFICACAO (PRO_INT_ID, NOT_STR_DESCRICAO) VALUES 
-(1, 'Sem ideia para o jantar? Confira essa receita'),
-(2, 'Atenção, seus pontos expiraram em breve.'),
-(3, 'Confira supermercados parceiros perto de você.'),
-(4, 'Preparamos essa oferta para você!'),
-(5, 'Biscoito Maizena está em promoção pertinho de você!');
-
 -- Insert into CIDADE
 INSERT INTO CIDADE (EST_INT_ID, CID_STR_DESCRICAO) VALUES 
 (1, 'São Paulo'),
@@ -86,6 +78,22 @@ INSERT INTO LISTAPREFERENCIA (USU_INT_ID, LIS_STR_DESCRICAO) VALUES
 (4, 'Lista Preferida 4'),
 (5, 'Lista Preferida 5');
 
+-- Insert into NOTIFICACAO
+INSERT INTO NOTIFICACAO (PRO_INT_ID, NOT_STR_DESCRICAO) VALUES 
+(1, 'Sem ideia para o jantar? Confira essa receita'),
+(2, 'Atenção, seus pontos expiraram em breve.'),
+(3, 'Confira supermercados parceiros perto de você.'),
+(4, 'Preparamos essa oferta para você!'),
+(5, 'Biscoito Maizena está em promoção pertinho de você!');
+
+-- Insert into PRODUTO
+INSERT INTO PRODUTO (SUP_INT_ID, OFE_INT_ID, CAT_INT_ID, MAR_INT_ID, PRO_STR_DESCRICAO, PRO_DAT_DATAVENCIMENTO, PRO_DOU_PRECO, PRO_INT_QUANTIDADE) VALUES 
+(1, 1, 1, 1, 'Leite Integral', '2024-12-01', 5.69, 200),
+(2, 2, 2, 2, 'Biscoito Maizena', '2025-01-01', 4.49, 225),
+(3, 3, 3, 3, 'Limpador Multiuso Gold', '2025-02-01', 5.75, 90),
+(4, 4, 4, 4, 'Sabonete Líquido para as mãos', '2025-03-01', 9.89, 400),
+(5, 5, 5, 5, 'Cola Instantânea Multiuso', '2025-04-01', 9.35, 39);
+
 -- Insert into INSTITUICAOONG
 INSERT INTO INSTITUICAOONG (USU_INT_ID, ONG_STR_TELEFONE, ONG_STR_RAZAOSOCIAL, ONG_STR_CNPJ, ONG_STR_NOMEREPRESENTANTE, ONG_STR_SITE) VALUES 
 (1, '11987654321', 'ONG Bom Alimento', '12345678000100', 'Carlos Júnior Abrantes', 'www.ongbomalimento.com'),
@@ -117,14 +125,6 @@ INSERT INTO USUARIONOTIFICACAO (USU_INT_ID, PRO_INT_ID, NOT_INT_ID, USN_STR_DESC
 (3, 3, 3, 'Notificação para Suellen Lima'),
 (4, 4, 4, 'Notificação para Ana Maria Montenegro'),
 (5, 5, 5, 'Notificação para Vanessa Fernandes');
-
--- Insert into PRODUTO
-INSERT INTO PRODUTO (SUP_INT_ID, OFE_INT_ID, CAT_INT_ID, MAR_INT_ID, PRO_STR_DESCRICAO, PRO_DAT_DATAVENCIMENTO, PRO_DOU_PRECO, PRO_INT_QUANTIDADE) VALUES 
-(1, 1, 1, 1, 'Leite Integral', '2024-12-01', 5.69, 200),
-(2, 2, 2, 2, 'Biscoito Maizena', '2025-01-01', 4.49, 225),
-(3, 3, 3, 3, 'Limpador Multiuso Gold', '2025-02-01', 5.75, 90),
-(4, 4, 4, 4, 'Sabonete Líquido para as mãos', '2025-03-01', 9.89, 400),
-(5, 5, 5, 5, 'Cola Instantânea Multiuso', '2025-04-01', 9.35, 39);
 
 -- Insert into USUARIOCOMUM
 INSERT INTO USUARIOCOMUM (USU_INT_ID, USC_STR_CPF, USC_STR_TELCELULAR) VALUES 
