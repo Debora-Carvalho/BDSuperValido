@@ -16,11 +16,11 @@ INSERT INTO PROMOCAO (PRO_STR_DESCRICAO, PRO_DAT_DATAINICIO, PRO_DAT_DATAEXPIRAC
 
 -- Insert into MARCA
 INSERT INTO MARCA (MAR_STR_DESCRICAO) VALUES 
-('Marca A'),
-('Marca B'),
-('Marca C'),
-('Marca D'),
-('Marca E');
+('Italac'),
+('Piraquê'),
+('Veja'),
+('Lux Botanicals'),
+('Keep');
 
 -- Insert into OFERTAEXCLUSIVA
 INSERT INTO OFERTAEXCLUSIVA (OFE_STR_DESCRICAO, OFE_INT_PONTUACAODESCONTO, OFE_DAT_DATAINICIO, OFE_DAT_DATAEXPIRACAO) VALUES 
@@ -64,8 +64,8 @@ INSERT INTO ENDERECO (CID_INT_ID, END_STR_LOGRADOURO, END_STR_NUMERO, END_STR_BA
 
 -- Insert into SUPERMERCADO
 INSERT INTO SUPERMERCADO (END_INT_ID, SUP_STR_NOMEFANTASIA, SUP_STR_RAZAOSOCIAL, SUP_STR_CNPJ, SUP_STR_NOMEREPRESENTANTE, SUP_STR_TELEFONE, SUP_STR_EMAIL, SUP_STR_SITE) VALUES 
-(1, 'Extra Supermercado', 'Companhia Brasileira de Distribuicao', '47508411000156', 'Cátia Bezerra', '11987654321', 'emaila@supermercado.com', 'www.clubeextra.com.br'),
-(2, 'Supermercado B', 'Razão Social B', '23456789000111', 'Representante B', '21987654322', 'emailb@supermercado.com', 'www.supermercadob.com'),
+(1, 'Extra Supermercado', 'Companhia Brasileira de Distribuicao', '47508411000156', 'Cátia Bezerra', '11987654321', 'extrarmercados@supermercado.com.br', 'www.clubeextra.com.br'),
+(2, 'Supermercado B', 'Razão Social B', '23456789000111', 'Edson Trindade', '21987654322', 'emailb@supermercado.com', 'www.supermercadob.com.br'),
 (3, 'Supermercado C', 'Razão Social C', '34567890000122', 'Representante C', '31987654323', 'emailc@supermercado.com', 'www.supermercadoc.com'),
 (4, 'Supermercado D', 'Razão Social D', '45678901000133', 'Representante D', '41987654324', 'emaild@supermercado.com', 'www.supermercadod.com'),
 (5, 'Supermercado E', 'Razão Social E', '56789012000144', 'Representante E', '51987654325', 'emaile@supermercado.com', 'www.supermercadoe.com');
@@ -73,10 +73,10 @@ INSERT INTO SUPERMERCADO (END_INT_ID, SUP_STR_NOMEFANTASIA, SUP_STR_RAZAOSOCIAL,
 -- Insert into USUARIO
 INSERT INTO USUARIO (END_INT_ID, USU_STR_DESCRICAO, USU_STR_TELEFONE, USU_STR_EMAIL) VALUES 
 (1, 'Douglas Silva', '11987654321', 'dougsilva@gmail.com'),
-(2, 'Tomás Duarte', '21987654322', 'usuariob@hotmail.com'),
-(3, 'Suellen Lima', '31987654323', 'usuarioc@gmail.com'),
+(2, 'Tomás Duarte', '21987654322', 'tomasduarte@hotmail.com'),
+(3, 'Suellen Lima', '31987654323', 'limasuellen@gmail.com'),
 (4, 'Ana Maria Montenegro', '41987654324', 'anamariamonte@hotmail.com'),
-(5, 'Vanessa Fernandes', '51987654325', 'usuarioe@email.com');
+(5, 'Vanessa Fernandes', '51987654325', 'vanifernandes@email.com');
 
 -- Insert into LISTAPREFERENCIA
 INSERT INTO LISTAPREFERENCIA (USU_INT_ID, LIS_STR_DESCRICAO) VALUES 
@@ -120,11 +120,11 @@ INSERT INTO USUARIONOTIFICACAO (USU_INT_ID, PRO_INT_ID, NOT_INT_ID, USN_STR_DESC
 
 -- Insert into PRODUTO
 INSERT INTO PRODUTO (SUP_INT_ID, OFE_INT_ID, CAT_INT_ID, MAR_INT_ID, PRO_STR_DESCRICAO, PRO_DAT_DATAVENCIMENTO, PRO_DOU_PRECO, PRO_INT_QUANTIDADE) VALUES 
-(1, 1, 1, 1, 'Produto A', '2024-12-01', 10.0, 100),
-(2, 2, 2, 2, 'Produto B', '2025-01-01', 20.0, 200),
-(3, 3, 3, 3, 'Produto C', '2025-02-01', 30.0, 300),
-(4, 4, 4, 4, 'Produto D', '2025-03-01', 40.0, 400),
-(5, 5, 5, 5, 'Produto E', '2025-04-01', 50.0, 500);
+(1, 1, 1, 1, 'Leite Integral', '2024-12-01', 5.69, 200),
+(2, 2, 2, 2, 'Biscoito Maizena', '2025-01-01', 4.49, 225),
+(3, 3, 3, 3, 'Limpador Multiuso Gold', '2025-02-01', 5.75, 90),
+(4, 4, 4, 4, 'Sabonete Líquido para as mãos Dama-da-Noite', '2025-03-01', 9.89, 400),
+(5, 5, 5, 5, 'Cola Instantânea Multiuso', '2025-04-01', 9.35, 39);
 
 -- Insert into USUARIOCOMUM
 INSERT INTO USUARIOCOMUM (USU_INT_ID, USC_STR_CPF, USC_STR_TELCELULAR) VALUES 
