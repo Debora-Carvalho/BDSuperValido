@@ -66,7 +66,7 @@ INSERT INTO ENDERECO (CID_INT_ID, END_STR_LOGRADOURO, END_STR_NUMERO, END_STR_BA
 INSERT INTO SUPERMERCADO (END_INT_ID, SUP_STR_NOMEFANTASIA, SUP_STR_RAZAOSOCIAL, SUP_STR_CNPJ, SUP_STR_NOMEREPRESENTANTE, SUP_STR_TELEFONE, SUP_STR_EMAIL, SUP_STR_SITE) VALUES 
 (1, 'Extra Supermercado', 'Companhia Brasileira de Distribuicao S/A.', '47508411000156', 'Cátia Bezerra', '11987654321', 'extrarmercados@supermercado.com.br', 'www.clubeextra.com.br'),
 (2, 'Supermercado Vovó Zuzu', 'Vovô Zuzu Comercial de Alimentos Ltda', '04733136000242', 'Edson Trindade', '21987654322', 'falecom@vovozuzu.com.br', 'www.vovozuzusupermercados.com.br'),
-(3, 'Nagumo Supermercado', 'Milbrasil Comércio de Alimentos Ltda.', ' 10961551000175', 'Otávio Moura', '11947246075', 'relacionamento@nagumo.com.br', 'www.nagumo.com.br'),
+(3, 'Nagumo Supermercado', 'Milbrasil Comércio de Alimentos Ltda.', '10961551000175', 'Otávio Moura', '11947246075', 'relacionamento@nagumo.com.br', 'www.nagumo.com.br'),
 (4, 'Assaí Atacadista', 'Sendas Distribuidora S/A.', '06057223000171', 'Marcos Teixeira', '41987654324', 'ri.assai@assai.com.br', 'www.assai.com.br'),
 (5, 'Supermercado Lopes', 'Supermercados Irmãos Lopes S/A.', '45827425000107', 'Gustavo Andrade', '11964217902', 'lopesfis@superlopes.com.br', 'www.supermercadolopes.com.br');
 
@@ -91,7 +91,7 @@ INSERT INTO INSTITUICAOONG (USU_INT_ID, ONG_STR_TELEFONE, ONG_STR_RAZAOSOCIAL, O
 (1, '11987654321', 'ONG Bom Alimento', '12345678000100', 'Carlos Júnior Abrantes', 'www.ongbomalimento.com'),
 (2, '21987654322', 'ONG Tá na Mesa', '23456789000111', 'Amanda Bastos', 'www.ongtanamesa.com'),
 (3, '31987654323', 'ONG Família Feliz', '34567890000122', 'Lilian de Barros', 'www.ongfamiliafeliz.com'),
-(4, '41987654324', 'Ong Podemos Mais', '45678901000133', 'Mônica Thompson', 'www.ongd.com'),
+(4, '41987654324', 'Ong Podemos Mais', '45678901000133', 'Mônica Thompson', 'www.ongpodemosmais.com'),
 (5, '51987654325', 'Ong Multiplicar Sonhos', '56789012000144', 'Mateus de Souza', 'www.ongmultiplicarsonhos.com');
 
 -- Insert into AVALIACAOEXPERIENCIA
