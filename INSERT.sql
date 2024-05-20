@@ -40,11 +40,11 @@ INSERT INTO CATEGORIA (CAT_STR_DESCRICAO) VALUES
 
 -- Insert into NOTIFICACAO
 INSERT INTO NOTIFICACAO (PRO_INT_ID, NOT_STR_DESCRICAO) VALUES 
-(1, 'Notificação 1'),
-(2, 'Notificação 2'),
-(3, 'Notificação 3'),
-(4, 'Notificação 4'),
-(5, 'Notificação 5');
+(1, 'Sem ideia para o jantar? Confira essa receita'),
+(2, 'Atenção, seus pontos expiraram em breve.'),
+(3, 'Confira supermercados parceiros perto de você.'),
+(4, 'Preparamos essa oferta para você!'),
+(5, 'Biscoito Maizena está em promoção pertinho de você!');
 
 -- Insert into CIDADE
 INSERT INTO CIDADE (EST_INT_ID, CID_STR_DESCRICAO) VALUES 
@@ -112,11 +112,11 @@ INSERT INTO MERCADOLISTAPREFERENCIA (LIS_INT_ID, SUP_INT_ID) VALUES
 
 -- Insert into USUARIONOTIFICACAO
 INSERT INTO USUARIONOTIFICACAO (USU_INT_ID, PRO_INT_ID, NOT_INT_ID, USN_STR_DESCRICAO) VALUES 
-(1, 1, 1, 'Notificação Usuário A'),
-(2, 2, 2, 'Notificação Usuário B'),
-(3, 3, 3, 'Notificação Usuário C'),
-(4, 4, 4, 'Notificação Usuário D'),
-(5, 5, 5, 'Notificação Usuário E');
+(1, 1, 1, 'Notificação para Douglas Silva'),
+(2, 2, 2, 'Notificação para Tomás Duarte'),
+(3, 3, 3, 'Notificação para Suellen Lima'),
+(4, 4, 4, 'Notificação para Ana Maria Montenegro'),
+(5, 5, 5, 'Notificação para Vanessa Fernandes');
 
 -- Insert into PRODUTO
 INSERT INTO PRODUTO (SUP_INT_ID, OFE_INT_ID, CAT_INT_ID, MAR_INT_ID, PRO_STR_DESCRICAO, PRO_DAT_DATAVENCIMENTO, PRO_DOU_PRECO, PRO_INT_QUANTIDADE) VALUES 
