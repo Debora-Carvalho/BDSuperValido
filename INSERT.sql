@@ -123,7 +123,7 @@ INSERT INTO PRODUTO (SUP_INT_ID, OFE_INT_ID, CAT_INT_ID, MAR_INT_ID, PRO_STR_DES
 (1, 1, 1, 1, 'Leite Integral', '2024-12-01', 5.69, 200),
 (2, 2, 2, 2, 'Biscoito Maizena', '2025-01-01', 4.49, 225),
 (3, 3, 3, 3, 'Limpador Multiuso Gold', '2025-02-01', 5.75, 90),
-(4, 4, 4, 4, 'Sabonete Líquido para as mãos Dama-da-Noite', '2025-03-01', 9.89, 400),
+(4, 4, 4, 4, 'Sabonete Líquido para as mãos', '2025-03-01', 9.89, 400),
 (5, 5, 5, 5, 'Cola Instantânea Multiuso', '2025-04-01', 9.35, 39);
 
 -- Insert into USUARIOCOMUM
