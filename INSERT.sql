@@ -64,11 +64,11 @@ INSERT INTO ENDERECO (CID_INT_ID, END_STR_LOGRADOURO, END_STR_NUMERO, END_STR_BA
 
 -- Insert into SUPERMERCADO
 INSERT INTO SUPERMERCADO (END_INT_ID, SUP_STR_NOMEFANTASIA, SUP_STR_RAZAOSOCIAL, SUP_STR_CNPJ, SUP_STR_NOMEREPRESENTANTE, SUP_STR_TELEFONE, SUP_STR_EMAIL, SUP_STR_SITE) VALUES 
-(1, 'Extra Supermercado', 'Companhia Brasileira de Distribuicao', '47508411000156', 'Cátia Bezerra', '11987654321', 'extrarmercados@supermercado.com.br', 'www.clubeextra.com.br'),
-(2, 'Supermercado B', 'Razão Social B', '23456789000111', 'Edson Trindade', '21987654322', 'emailb@supermercado.com', 'www.supermercadob.com.br'),
-(3, 'Supermercado C', 'Razão Social C', '34567890000122', 'Representante C', '31987654323', 'emailc@supermercado.com', 'www.supermercadoc.com'),
-(4, 'Supermercado D', 'Razão Social D', '45678901000133', 'Representante D', '41987654324', 'emaild@supermercado.com', 'www.supermercadod.com'),
-(5, 'Supermercado E', 'Razão Social E', '56789012000144', 'Representante E', '51987654325', 'emaile@supermercado.com', 'www.supermercadoe.com');
+(1, 'Extra Supermercado', 'Companhia Brasileira de Distribuicao S/A.', '47508411000156', 'Cátia Bezerra', '11987654321', 'extrarmercados@supermercado.com.br', 'www.clubeextra.com.br'),
+(2, 'Supermercado Vovó Zuzu', 'Vovô Zuzu Comercial de Alimentos Ltda', '04733136000242', 'Edson Trindade', '21987654322', 'falecom@vovozuzu.com.br', 'www.vovozuzusupermercados.com.br'),
+(3, 'Nagumo Supermercado', 'Milbrasil Comércio de Alimentos Ltda.', ' 10961551000175', 'Otávio Moura', '11947246075 ', 'relacionamento@nagumo.com.br', 'www.nagumo.com.br'),
+(4, 'Assaí Atacadista', 'Sendas Distribuidora S/A.', '06057223000171', 'Marcos Teixeira', '41987654324', 'ri.assai@assai.com.br', 'www.assai.com.br'),
+(5, 'Supermercado Lopes', 'Supermercados Irmãos Lopes S/A.', '45827425000107', 'Gustavo Andrade', '11964217902', 'lopesfis@superlopes.com.br', 'www.supermercadolopes.com.br');
 
 -- Insert into USUARIO
 INSERT INTO USUARIO (END_INT_ID, USU_STR_DESCRICAO, USU_STR_TELEFONE, USU_STR_EMAIL) VALUES 
